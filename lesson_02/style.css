@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 30px;
+}
+
+main {
+  margin: auto;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.image-container {
+  background-image: url("https://images.unsplash.com/photo-1612886623532-1802833fcc67?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  max-width: 90vw;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto 20px;
+}
+
+.end {
+  margin: 30px auto 300px;
+}

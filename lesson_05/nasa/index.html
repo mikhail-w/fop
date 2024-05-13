@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>NASA APOD</title>
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>APOD</h1>
+    <div class="container">
+      <div class="container__image">
+        <img class="image" src="" alt="" />
+      </div>
+      <div class="container__explanation"></div>
+    </div>
+    <div class="section">
+      <label for="date">Select Date: </label>
+      <input id="date" class="date" type="date" min="2000-01-01" />
+      <button class="request">Get Image</button>
+    </div>
+  </body>
+</html>

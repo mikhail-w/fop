@@ -1,26 +1,27 @@
-let total = 0
+const numbers = document.querySelectorAll('.number');
+const output = document.querySelector('#placeToPutResult');
+const calculations = document.querySelectorAll('.symbol');
+let total = 0;
+let numberString = '';
 
-document.querySelector('#pumpkin').addEventListener('click', makeZero)
-document.querySelector('#dominosPizza').addEventListener('click', add3)
-document.querySelector('#zebra').addEventListener('click', add9)
-document.querySelector('#cantThinkOfAnything').addEventListener('click', sub2)
+console.log({ numbers });
+console.log({ calculations });
 
-function makeZero() {
-  total = 0
-  document.querySelector('#placeToPutResult').innerText = total
-}
+calculations.forEach(calc => {
+  calc.addEventListener('click', function (e) {});
+  console.log(calc.innerText);
+});
 
-function add3() {
-  total = total + 3
-  document.querySelector('#placeToPutResult').innerText = total
-}
+numbers.forEach(number => {
+  number.addEventListener('click', function (e) {
+    let num = e.target.innerText;
+    // console.log(e.target.innerText);
+    numberString += num;
+    setOutput(e.target.innerText);
+  });
+});
 
-function add9() {
-  total = total + 9
-  document.querySelector('#placeToPutResult').innerHTML = total
-}
-
-function sub2() {
-  total = total - 2
-  document.querySelector('#placeToPutResult').innerHTML = total
+function setOutput(val) {
+  output.innerText = val;
+  console.log(numberString);
 }

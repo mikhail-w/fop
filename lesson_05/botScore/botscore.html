@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- external CSS link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<!-- 
+  <!-- 
 Assignment: Create a button that adds 1 and a button that subtracts 1 to a botScore stored in local storage. The current count in local storage should be mirrored in the DOM. Finally, add a button that resets the count to 0 as well -->
 
-<body>
-    <img src="nums.png" alt="Numbers">
-
+  <body>
+    <div class="container">
+      <div class="container__image">
+        <img src="nums.png" alt="Numbers" />
+      </div>
+      <div class="container__buttons">
+        <button class="add">ADD +</button>
+        <button class="sub">SUBTRACT -</button>
+      </div>
+    </div>
     <h4>Show Local Storage Count Here</h4>
-
+    <div class="storage-value"></div>
+    <div class="reset">RESET</div>
     <!-- external JS link -->
     <script type="text/javascript" src="app.js"></script>
-</body>
-
-
-
+  </body>
 </html>

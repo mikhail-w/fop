@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- external CSS and JS links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script async type="text/javascript" src="app.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<!-- 
+  <!-- 
 Assignment: Improve the functionality of my bad calculator to include basic arithmetic for all numbers 0-9, if you have extra time work on the CSS file so that it matches the calculator.png picture found within this folder -->
 
-<body>
+  <body>
     <h1>Bad Calculator</h1>
-    <ul>
-        <li id="pumpkin">0</li>
-        <li id="dominosPizza">+3</li>
-        <li id="zebra">+9</li>
-        <li id="cantThinkOfAnything">-2</li>
-    </ul>
-    <h2>Result: <span id="placeToPutResult"></span></h2>
-</body>
-
+    <div class="container">
+      <div class="output"><span id="placeToPutResult"></span></div>
+      <div class="calc-section">
+        <ul class="numbers">
+          <li class="number one">1</li>
+          <li class="number two">2</li>
+          <li class="number three">3</li>
+          <li class="number four">4</li>
+          <li class="number five">5</li>
+          <li class="number six">6</li>
+          <li class="number seven">7</li>
+          <li class="number eight">8</li>
+          <li class="number nine">9</li>
+          <li class="number zero">0</li>
+        </ul>
+        <ul class="calculations">
+          <li class="symbol">+</li>
+          <li class="symbol">-</li>
+          <li class="symbol">*</li>
+          <li class="symbol">/</li>
+          <li class="symbol">=</li>
+        </ul>
+      </div>
+      <div class="clear">C</div>
+    </div>
+    <!-- <ul>
+      <li id="zero">0</li>
+      <li id="dominosPizza">+3</li>
+      <li id="zebra">+9</li>
+      <li id="cantThinkOfAnything">-2</li>
+    </ul> -->
+  </body>
 </html>

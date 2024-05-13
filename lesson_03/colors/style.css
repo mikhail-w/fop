@@ -1,5 +1,9 @@
+h2 {
+  font-weight: b;
+  border: 1px solid red;
+}
 
-
-
-
-
+section {
+  width: 50vw;
+  height: 200px;
+}

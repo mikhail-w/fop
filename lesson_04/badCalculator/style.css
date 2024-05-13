@@ -2,30 +2,59 @@
     box-sizing: border-box;
 }
 
-h1,
-h2 {
-    text-align: center;
-
+body {
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
-img {
-    display: block;
-    height: 300px;
-    margin: 0 auto;
-}
-
-ul {
-    width: 100px;
-    height: 200px;
-    border: 3px solid black;
-    margin: 0 auto;
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    text-align: center;
-    width: 94px;
-    height: 49px;
+.output {
     border: 1px solid black;
+    height: 30px;
+}
+
+.calc-section {
+    display: flex;
+}
+
+.numbers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* outline: 1px solid red; */
+    max-width: 400px;
+}
+
+.number {
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.number:hover {
+    cursor: pointer;
+}
+
+.calculations {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.symbol {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.output, #placeToPutResult {
+    text-align: center;
 }
