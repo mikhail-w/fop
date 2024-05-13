@@ -37,7 +37,7 @@ def std_dev(person_list):
 
     # Take the square  of that to obtain the population standard deviation.
     standard_div = variance**0.5
-    print(f"Standard Deviation: {standard_div}\n")
+    return standard_div
 
 
 p1 = Person("Kyoungmin", 73)
@@ -45,5 +45,4 @@ p2 = Person("Mercedes", 24)
 p3 = Person("Beatrice", 48)
 person_list = [p1, p2, p3]
 answer = std_dev(person_list)
-# pop = [9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4]
-# answer = std_dev(pop)
+print(f"Standard Deviation: {answer}\n")
