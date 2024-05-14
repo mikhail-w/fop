@@ -1,6 +1,8 @@
 def hailstone(num):
-    if num == 0:
+    if num <= 0:
         return 0
+    elif num == 1:
+        return 1
     counter = 0
     temp = num
 
@@ -17,5 +19,5 @@ def hailstone(num):
     return counter
 
 
-answer = hailstone(7)
-# print(answer)
+answer = hailstone(3)
+print(f"It took {answer} step(s)")

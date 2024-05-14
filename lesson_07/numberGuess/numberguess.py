@@ -1,6 +1,10 @@
-number_to_guess = int(input("Enter the integer for the player to guess: "))
+import random
+
+number_to_guess = random.randint(1, 20)
+print(f"Number to guess: {number_to_guess}")
 tries = 0
 guess = int(input("Enter your guess: "))
+
 while True:
     tries += 1
     if guess == number_to_guess:
