@@ -60,12 +60,17 @@ It should have:
   argument. 
   It returns True if the LineSegment the method is being called on is
   parallel to the one being passed as the argument. 
-  Otherwise, it should return  False. For example, if line_seg_1 and line_seg_2 are both LineSegment objects,
+  Otherwise, it should return  False. 
+  
+  For example, if line_seg_1 and line_seg_2 are both LineSegment objects,
   then `line_seg_1.is_parallel_to(line_seg_2)` should return True if those two
-  line segments are parallel, but otherwise should return False. For this
-  method, you'll calculate the slopes of the two LineSegments and compare them.
+  line segments are parallel, but otherwise should return False. 
+  
+  For this method, you'll calculate the slopes of the two LineSegments and compare them.
   If the two slopes are equal, then the two line segments are parallel,
-  otherwise they are not. This can make use of the following slope method.
+  otherwise they are not. 
+  
+  This can make use of the following slope method.
   **Remember that you shouldn't test two floats for exact equality because of
   possible lack of precision or round-off errors. Instead, if you need to
   compare float values for equality, you can do it like this: abs(num_1 - num_2)

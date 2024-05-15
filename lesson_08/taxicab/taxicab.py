@@ -1,9 +1,9 @@
 class Taxicab:
-    def __init__(self, x, y):
+    def __init__(self, x, y, od=50):
         # private data members
         self.__x_coord = x
         self.__y_coord = y
-        self.__odometer = 0
+        self.__odometer = od
 
     def get_x_coord(self):
         return self.__x_coord
@@ -26,9 +26,12 @@ class Taxicab:
         print(f"Coordinates: ({self.__x_coord}, {self.__y_coord})")
 
 
-a = Taxicab(5, -8)
-a.move_x(3)
-a.move_y(-4)
-a.move_x(-1)
-print(f"Odometer reading: {a.get_odometer()}")
-a.show_coords()
+# a = Taxicab(5, -8)
+# a.move_x(3)
+# a.move_y(-4)
+# a.move_x(-1)
+# print(f"Odometer reading: {a.get_odometer()}")
+# a.show_coords()
+
+b = Taxicab(10, 23)
+print(f"Odometer reading: {b.get_odometer()}")
