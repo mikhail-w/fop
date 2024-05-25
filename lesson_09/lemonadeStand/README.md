@@ -1,3 +1,4 @@
+#
 You will be writing code for recording the menu items and daily sales of a lemonade stand. It will have these classes: MenuItem, SalesForDay, and LemonadeStand. All data members of each class should be marked as **private** (a leading underscore in the name). Since they're private, if you need to access them from outside the class, you should do so via get or set methods.
 
 Here are the method descriptions for the three classes:

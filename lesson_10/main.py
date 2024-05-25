@@ -2,7 +2,7 @@ import sys
 from hero import SpaceShip
 
 import pygame
-
+music = pygame.mixer.Sound(./)
 
 class Game:
 
