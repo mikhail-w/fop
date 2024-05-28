@@ -17,10 +17,9 @@ for char in char_list_2:
         break
     char_count[char] -= 1
 
+for count in char_count.values():
+    if count != 0:
+        print("The strings are not anagrams.")
+        break
 else:
-    for count in char_count.values():
-        if count != 0:
-            print("The strings are not anagrams.")
-            break
-    else:
-        print("The strings are anagrams.")
+    print("The strings are anagrams.")
