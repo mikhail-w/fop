@@ -4,7 +4,15 @@
 # Output: False
 # Input: 'Python_Exercise_1'
 # Output: True
+import re
 
+
+def ul_only(str):
+    return bool(re.match("[\w]+$", str, re.IGNORECASE))
+
+
+# print(ul_only("The quick brown fox jumps over the lazy dog."))
+# print(ul_only("Python_Exercise_1"))
 
 
 # 2. Write a function that uses a regex expression to return the boolean True if the string that is passed in starts with the number 5.
@@ -13,7 +21,12 @@
 # Output: False
 # Input: '5-762145'
 # Output: True
+def start_five(str):
+    return bool(re.match("^[5]", str))
 
+
+# print(start_five("6-563345"))
+# print(start_five("5-762145"))
 
 
 # 3. Write a function that uses a regex expression to return the boolean True if the string that is passed in has a number at the end.
@@ -22,8 +35,12 @@
 # Output: False
 # Input: 'abcdef7'
 # Output: True
+def end_num(str):
+    return bool(re.search("\d$", str))
 
 
+# print(end_num("abcdef"))
+# print(end_num("abcdef7"))
 
 # 4. Write a function that uses a regex expression to return a list of all the instances of dog or dogs.
 # Exmaple:
@@ -31,12 +48,29 @@
 # Output: ['dog', 'dog', 'dogs', 'dogs', 'dog']
 
 
+def all_dogs(str):
+    res = re.findall("dogs?", str)
+    return res
+
+
+# print(
+#     all_dogs(
+#         "Hey dog, how are you dog, where are all the dogs? Man these dogs are lost dog"
+#     )
+# )
 
 # 5. Write a function that uses a regex expression to return a list that only includes the numbers.
 # Exmaple:
 # Input: 'Ten 10, Twenty 20, Thirty 30'
 # Output: ['10', '20', '30']
 
+
+def only_num(str):
+    res = re.findall("\d+", str)
+    return res
+
+
+# print(only_num("Ten 10, Twenty 20, Thirty 30"))
 
 
 # 6. Write a function that uses a regex expression to return a list with all the words that start with 'a' or 'e'.
@@ -45,12 +79,22 @@
 # Output: ['example', 'an', 'array', 'elements']
 
 
+def starts_with(str):
+    res = re.findall(r"\b[a|e]\w+", str)
+    return res
+
+
+# print(starts_with("The following example creates an array list with 50 elements."))
+
 
 # 7. Write a function that uses a regex expression to abbreviate 'Road' as 'Rd.' in a given string.
 # Exmaple:
 # Input: '21 Rainbow Road'
 # Output: '21 Rainbow Rd.'
 
+
+def abv_rd(str):
+    res = re.(r"")
 
 
 # 8. Write a function that uses a regex expression to replace all occurrences of space, comma, or period with a colon.
@@ -59,12 +103,10 @@
 # Output: 'Python:Exercises::PHP:exercises:'
 
 
-
 # 9. Write a function that uses a regex expression to return a list of all words in a string that are exactly five characters long.
 # Exmaple:
 # Input: 'The quick brown fox jumps over the lazy dog.'
 # Output: ['quick', 'brown', 'jumps']
-
 
 
 # 10. Write a function that uses a regex expression to return a string that has all extra spaces removed. One space between words should be kept, but any extra spaces should be removed.
@@ -73,12 +115,10 @@
 # Output: 'Python Exercises'
 
 
-
 # 11. Write a function that uses a regex expression to return a string with all non-alphanumeric characters removed.
 # Exmaple:
 # Input: '**//Python Exercises// - 12. '
 # Output: 'PythonExercises12'
-
 
 
 # 12. Write a function that uses a regex expression to return a list of words that was split by capital letters.
@@ -87,12 +127,10 @@
 # Output: ['Python', 'Tutorial', 'And', 'Exercises']
 
 
-
 # 13. Write a function that uses a regex expression to return the following string replacement that is case-insensitive.
 # Exmaple:
 # Input: 'Hello HOTDOG, how are you? Do you even like hotdogs?'
 # Output: 'Hello CUPCAKE, how are you? Do you even like cupcakes?'
-
 
 
 # 14. Write a function that uses a regex expression to return a string that has all words that are between 1 and 3 characters removed.
@@ -101,19 +139,16 @@
 # Output: 'quick brown jumps over lazy.'
 
 
-
 # 15. Write a function that uses a regex expression to return a list of strings who's parenthesis section has been removed.
 # Exmaple:
 # Input: ['example (.com)', 'w3resource', 'github (.com)', 'stackoverflow (.com)']
 # Output: ['example', 'w3resource', 'github', 'stackoverflow']
 
 
-
 # 16. Write a function that uses a regex expression to return a string with all the lowercase letters removed.
 # Exmaple:
 # Input: 'KDeoALOklOOHserfLoAJSIskdsf'
 # Output: 'KDALOOOHLAJSI'
-
 
 
 # 17. Write a function that uses a regex expression to return the boolean True if the string passed in has an 'a' followed by two or three 'b's. Otherwise return False.
@@ -124,7 +159,6 @@
 # Output: True
 
 
-
 # 18. Write a function that uses a regex expression to return the boolean True if the string passed in has lowercase letters joined with a underscore. Otherwise return False.
 # Exmaple:
 # Input: 'aab_Abbbc'
@@ -133,14 +167,12 @@
 # Output: True
 
 
-
 # 19. Write a function that uses a regex expression to return the boolean True if the string passed in has one uppercase letter followed by lowercase letters. Otherwise return False.
 # Exmaple:
 # Input: 'PYTHON'
 # Output: False
 # Input: 'AaBbGg'
 # Output: True
-
 
 
 # 20. Write a function that uses a regex expression to return the boolean True if the string passed in has proper punctuation. Otherwise return False.
